@@ -10,3 +10,17 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+.navbar-yelp {
+  justify-content: space-between;
+  background: white;
+}
+
+.navbar-yelp .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-yelp .navbar-brand img {
+  width: 40px;
+}

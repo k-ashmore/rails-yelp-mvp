@@ -1,0 +1,14 @@
+<h1>Restaurants</h1>
+
+<div class="product">
+<% @restaurants.each do |restaurant| %>
+  <div class="product-name">
+    <%= link_to restaurant.name, restaurant_path(restaurant) %>
+  </div>
+  <div class="product-info">
+    <p><%= restaurant.address %></p>
+    <p><%= restaurant.phone_number %></p>
+    <p><%= restaurant.category.capitalize %></p>
+  </div>
+  <% end %>
+</div>
